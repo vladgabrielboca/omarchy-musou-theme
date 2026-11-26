@@ -22,10 +22,10 @@ omarchy theme set musou
 
 The `musou-eza` hook activates `eza.yml` only while Musou is active and removes the symlink whenever you switch to another theme.
 
-To apply the boot and disk-unlock screen as well:
+To apply the pure `#000000` boot and disk-unlock screen as well:
 
 ```bash
-omarchy plymouth set by theme musou
+omarchy plymouth set '#000000' '#dcdcdc' ~/.config/omarchy/themes/musou/unlock.png
 ```
 
 ## Unlock Screen
@@ -66,4 +66,4 @@ Four backgrounds ship with the theme. `0-solid-black.jpg` loads first by default
 - `chromium.theme`: `#000000` (`0,0,0`) browser frame color for Chromium-based browsers.
 - `btop.theme`: uniform graphite panel borders and monochrome graphs, with `#9c94c8` reserved for shortcut keys and the active row.
 - `eza.yml`: monochrome `ls` hierarchy with dimmed gray metadata, soft-white code/docs, brushed-gray media, smoke-indigo folders, light-lavender symlinks, and muted-rose executables/archives.
-- `unlock.png` and `preview-unlock.png`: dimmed dot-matrix *Creation of Adam* boot and login graphic on `#000000`.
+- `unlock.png` and `preview-unlock.png`: transparent dimmed dot-matrix *Creation of Adam* boot and login graphic.
