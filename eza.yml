@@ -58,16 +58,16 @@ links:
   multi_link_file: { foreground: "#9e9e9e" }
 
 file_type:
-  image: { foreground: Default }
-  video: { foreground: Default }
-  music: { foreground: Default }
-  crypto: { foreground: Default }
-  document: { foreground: Default }
-  compressed: { foreground: Default }
-  temp: { foreground: Default }
-  compiled: { foreground: Default }
-  build: { foreground: Default }
-  source: { foreground: Default }
+  image: { foreground: "#a2a2a2", is_bold: false }
+  video: { foreground: "#a2a2a2", is_bold: false }
+  music: { foreground: "#a2a2a2", is_bold: false }
+  crypto: { foreground: "#a86870", is_bold: false }
+  document: { foreground: Default, is_bold: false }
+  compressed: { foreground: "#a86870", is_bold: false }
+  temp: { foreground: "#787878", is_bold: false }
+  compiled: { foreground: "#787878", is_bold: false }
+  build: { foreground: Default, is_bold: false }
+  source: { foreground: Default, is_bold: false }
 
 punctuation: { foreground: "#525252" }
 date: { foreground: "#8a8a8a" }
