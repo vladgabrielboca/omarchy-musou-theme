@@ -63,6 +63,7 @@ Four backgrounds ship with the theme. `0-solid-black.jpg` loads first by default
 
 - `colors.toml`: generates app configs across terminals, Hyprland, editors, and Qt.
 - `shell.toml`: `#000000` bar and overlays with `1px` graphite borders on popups and notifications (`2px` on launcher and menus).
+- `chromium.theme`: `#000000` (`0,0,0`) browser frame color for Chromium-based browsers.
 - `btop.theme`: uniform graphite panel borders and monochrome graphs, with `#9c94c8` reserved for shortcut keys and the active row.
 - `eza.yml`: monochrome `ls` hierarchy with dimmed gray metadata, soft-white code/docs, brushed-gray media, smoke-indigo folders, light-lavender symlinks, and muted-rose executables/archives.
 - `unlock.png` and `preview-unlock.png`: dimmed dot-matrix *Creation of Adam* boot and login graphic on `#000000`.
