@@ -16,8 +16,11 @@ Pure `#000000` top bar and overlays. `#0b0b0b` app surfaces so white text stays 
 
 ```bash
 omarchy theme install https://github.com/vladgabrielboca/omarchy-musou-theme
+omarchy hook install theme-set ~/.config/omarchy/themes/musou/hooks/musou-eza
 omarchy theme set musou
 ```
+
+The `musou-eza` hook activates `eza.yml` only while Musou is active and removes the symlink whenever you switch to another theme.
 
 To apply the boot and disk-unlock screen as well:
 
@@ -61,30 +64,5 @@ Four backgrounds ship with the theme. `0-solid-black.jpg` loads first by default
 - `colors.toml`: generates app configs across terminals, Hyprland, editors, and Qt.
 - `shell.toml`: `#000000` bar and overlays with `1px` graphite borders on popups and notifications (`2px` on launcher and menus).
 - `btop.theme`: uniform graphite panel borders and monochrome graphs, with `#9c94c8` reserved for shortcut keys and the active row.
-- `eza.yml`: monochrome `ls` hierarchy with dimmed gray metadata, soft-white filenames, and indigo folders/executables.
+- `eza.yml`: monochrome `ls` hierarchy with dimmed gray metadata, soft-white code/docs, brushed-gray media, smoke-indigo folders, light-lavender symlinks, and muted-rose executables/archives.
 - `unlock.png` and `preview-unlock.png`: dimmed dot-matrix *Creation of Adam* boot and login graphic on `#000000`.
-
-<details>
-<summary>Optional: activate <code>eza.yml</code> only while Musou is active</summary>
-
-Omarchy aliases `ls` to `eza -lh`. To apply Musou's `eza.yml` automatically without overriding other Omarchy themes, save this hook to `~/.config/omarchy/hooks/theme-set.d/eza-theme` and make it executable (`chmod +x`):
-
-```bash
-#!/bin/bash
-set -eu
-
-THEME_EZA="$HOME/.local/state/omarchy/current/theme/eza.yml"
-TARGET_DIR="$HOME/.config/eza"
-TARGET="$TARGET_DIR/theme.yml"
-
-if [[ -f "$THEME_EZA" ]]; then
-  mkdir -p "$TARGET_DIR"
-  ln -sfn "$THEME_EZA" "$TARGET"
-elif [[ -L "$TARGET" ]]; then
-  rm -f "$TARGET"
-fi
-```
-
-Then re-apply the theme with `omarchy theme set musou`. Switching to any other theme removes the symlink and restores default `eza` colors.
-
-</details>

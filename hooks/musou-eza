@@ -1,0 +1,15 @@
+#!/bin/bash
+# Apply Musou's eza.yml only when Musou is the active Omarchy theme.
+set -eu
+
+THEME_NAME="${1:-$(cat "$HOME/.local/state/omarchy/current/theme.name" 2>/dev/null || true)}"
+THEME_EZA="$HOME/.local/state/omarchy/current/theme/eza.yml"
+TARGET_DIR="$HOME/.config/eza"
+TARGET="$TARGET_DIR/theme.yml"
+
+if [[ "$THEME_NAME" == "musou" && -f "$THEME_EZA" ]]; then
+  mkdir -p "$TARGET_DIR"
+  ln -sfn "$THEME_EZA" "$TARGET"
+elif [[ -L "$TARGET" && "$(readlink "$TARGET")" == "$THEME_EZA" ]]; then
+  rm -f "$TARGET"
+fi
