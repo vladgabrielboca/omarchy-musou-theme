@@ -4,7 +4,7 @@
 
 A dark monochrome theme for [Omarchy](https://omarchy.org), named after Musou Black.
 
-Pure `#000000` top bar and overlays. `#0b0b0b` app surfaces so white text stays comfortable for long sessions. Indigo for focus and directories, muted rose for errors.
+Pure `#000000` top bar and overlays. `#0b0b0b` app surfaces so white text stays comfortable for long sessions. Indigo for accents, selections, and directories, muted rose for errors.
 
 </div>
 
@@ -54,7 +54,7 @@ Four backgrounds ship with the theme. `0-solid-black.jpg` loads first by default
 | Selection | `#1c1c1c` |
 | Text | `#dcdcdc` |
 | Bright Text | `#f0f0f0` |
-| Muted | `#646464` |
+| Muted | `#707070` |
 | Indigo (directories, prompt) | `#8c84b8` |
 | Bright Indigo (accent, active selection) | `#9c94c8` |
 | Rose (errors, alerts) | `#a86870` |
