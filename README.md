@@ -36,7 +36,7 @@ omarchy plymouth set '#000000' '#dcdcdc' ~/.config/omarchy/themes/musou/unlock.p
 
 ## Wallpapers
 
-Four backgrounds ship with the theme. `0-solid-black.jpg` loads first by default.
+Five backgrounds ship with the theme, all at least 3840x2160. `0-solid-black.jpg` loads first by default.
 
 | | |
 | :---: | :---: |
@@ -44,6 +44,10 @@ Four backgrounds ship with the theme. `0-solid-black.jpg` loads first by default
 | `0-solid-black.jpg` | `1-creation-of-adam-dots.png` |
 | <img src="backgrounds/2-creation-of-adam.png" alt="Creation of Adam" width="100%" /> | <img src="backgrounds/3-dripping.jpg" alt="Dripping" width="100%" /> |
 | `2-creation-of-adam.png` | `3-dripping.jpg` |
+| <a href="backgrounds/4-ophelia.mp4"><img src="preview-ophelia.jpg" alt="Ophelia" width="100%" /></a> | |
+| `4-ophelia.mp4` | |
+
+`4-ophelia.mp4` is a seamless 10 second animated loop of Cabanel's *Ophelia* (1883) in black and white: willows sway, the water ripples, the figure stays still. It is H.264 and costs a little CPU to decode while it is on screen. Click the still above to watch it.
 
 ## Palette
 
