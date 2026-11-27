@@ -8,7 +8,7 @@ background       = "#000000"
 background-alpha = 1.0
 text             = "#dcdcdc"
 # Modules calling attention to themselves (recording, voxtype, alerts, updates)
-active           = "#a86870"
+active           = "#c2848c"
 # Cross-axis size at font base-size 12. size-horizontal is the height of
 # top/bottom bars; size-vertical is the width of left/right bars. With
 # scale-with-font enabled, these grow/shrink with [font] base-size.
