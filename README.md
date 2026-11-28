@@ -4,7 +4,7 @@
 
 A dark monochrome theme for [Omarchy](https://omarchy.org), named after Musou Black.
 
-Pure `#000000` top bar and overlays. `#0b0b0b` app surfaces so white text stays comfortable for long sessions. Indigo for accents and directories, soft sage for strings and additions, muted rose for errors.
+Pure `#000000` top bar and overlays. `#0b0b0b` app surfaces so white text stays comfortable for long sessions. Indigo for accents, directories, and terminal ANSI green, soft sage for added lines in diffs, muted rose for errors.
 
 </div>
 
@@ -59,9 +59,9 @@ Five backgrounds ship with the theme, all at least 3840x2160. `0-solid-black.jpg
 | Text | `#dcdcdc` |
 | Bright Text | `#f0f0f0` |
 | Muted | `#707070` |
-| Indigo (directories, prompt) | `#948cc0` |
+| Indigo (directories, prompt, ANSI green) | `#948cc0` |
 | Bright Indigo (accent, active selection) | `#9c94c8` |
-| Sage (strings, additions) | `#8ba790` |
+| Sage (added lines in diffs) | `#8ba790` |
 | Rose (errors, alerts) | `#a86870` |
 
 ### What is included
@@ -69,7 +69,7 @@ Five backgrounds ship with the theme, all at least 3840x2160. `0-solid-black.jpg
 - `colors.toml`: generates app configs across terminals, Hyprland, editors, and Qt.
 - `shell.toml`: `#000000` bar and overlays with `1px` graphite borders on popups and notifications (`2px` on launcher and menus).
 - `chromium.theme`: `#000000` (`0,0,0`) browser frame color for Chromium-based browsers.
-- `neovim.lua`: the generated aether palette, with the visual selection one step brighter (`#424242`) so it stays visible on the cursor line.
+- `neovim.lua`: the generated aether palette, with the visual selection one step brighter (`#424242`) so it stays visible on the cursor line, and added lines in diffs painted sage.
 - `btop.theme`: uniform graphite panel borders and monochrome graphs, with `#9c94c8` reserved for shortcut keys and the active row.
 - `eza.yml`: monochrome `ls` hierarchy with dimmed gray metadata, soft-white code/docs, brushed-gray media, smoke-indigo folders, light-lavender symlinks, and muted-rose executables/archives.
 - `unlock.png` and `preview-unlock.png`: transparent dimmed dot-matrix *Creation of Adam* boot and login graphic.
